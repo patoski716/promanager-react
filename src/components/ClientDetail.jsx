@@ -20,7 +20,7 @@ const ClientDetail = () => {
         });
     }, [postId]);
 
-    let url = `http://localhost:8000/api/v1/clients/delete_client/${postId}/`
+    let url = `https://promanager-django.herokuapp.com/api/v1/clients/delete_client/${postId}/`
     let method = 'DELETE'
 
     let deleteclient = async (e) => {

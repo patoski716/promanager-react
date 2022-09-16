@@ -42,7 +42,7 @@ const AddClient = () => {
           return
       }
 
-      let url = 'http://localhost:8000/api/v1/clients/'
+      let url = 'https://promanager-django.herokuapp.com/api/v1/clients/'
       let method = 'POST'
       axios({
           method: method,

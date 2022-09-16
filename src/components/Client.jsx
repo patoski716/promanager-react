@@ -8,7 +8,7 @@ const Client = () => {
   const [posts, setPosts] = useState([]);
     useEffect(() => {
         axios
-        .get(`http://localhost:8000/api/v1/clients/`)
+        .get(`https://promanager-django.herokuapp.com/api/v1/clients/`)
         .then((res) => {
             console.log(res);
             setPosts(res.data);

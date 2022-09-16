@@ -6,7 +6,7 @@ const AddProject = () => {
     const [clients, setClients] = useState([]);
     useEffect(() => {
         axios
-        .get(`http://localhost:8000/api/v1/clients/`)
+        .get(`https://promanager-django.herokuapp.com/api/v1/clients/`)
         .then((res) => {
             console.log(res);
             setClients(res.data);
@@ -52,7 +52,7 @@ const AddProject = () => {
           return
       }
 
-      let url = 'http://localhost:8000/api/v1/projects/'
+      let url = 'https://promanager-django.herokuapp.com/api/v1/projects/'
       let method = 'POST'
       axios({
           method: method,

@@ -49,7 +49,7 @@ const EditClient = () => {
 		// console.log(formData);
         axios({
             method: "PUT",
-            url:`http://localhost:8000/api/v1/clients/delete_client/${postId}/`,
+            url:`https://promanager-django.herokuapp.com/api/v1/clients/delete_client/${postId}/`,
         data:{
             name: formData.name,
 			email: formData.email,

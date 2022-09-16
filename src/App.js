@@ -24,6 +24,7 @@ import EditClient from "./components/EditClient";
 // project routes
 import ProjectDetail from "./components/ProjectDetail";
 import AddProject from "./components/AddProject";
+import ErrorPage from "./components/ErrorPage";
 
 
 
@@ -35,10 +36,11 @@ function App() {
       <Header/>
       <Routes>
       <Route path="/" element={<PublicRoutes/>}>
+          <Route path='*' element={<ErrorPage />} />
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/register" element={<Register/>}/>
           <Route exact path="/login" element={<Login/>}/>
-        </Route>
+      </Route>
         {/* protected routes */}
       <Route exact path="/" element={<PrivateRoute/>}>
 

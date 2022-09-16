@@ -8,7 +8,7 @@ const Project = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         axios
-        .get(`http://localhost:8000/api/v1/projects/`)
+        .get(`https://promanager-django.herokuapp.com/api/v1/projects/`)
         .then((res) => {
             console.log(res);
             setPosts(res.data);
